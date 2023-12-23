@@ -4,15 +4,7 @@ services:
   mongo:
     image: mongo:6.0.8
     restart: always
-    ports:
-      - "27017:27017"
-    volumes:
-      - mongo_data:/data/db
-    environment:
-      MONGO_INITDB_ROOT_USERNAME: mongo
-      MONGO_INITDB_ROOT_PASSWORD: mongo
-
-  etcd:
+    por
     image: docker.io/bitnami/etcd:3.5
     environment:
       ALLOW_NONE_AUTHENTICATION: "yes"
