@@ -1,15 +1,4 @@
-import { Block, EventWithTransaction } from "./common/deps.ts";
-import {
-  formatFelt,
-  SELECTOR_KEYS,
-  MONGO_CONNECTION_STRING,
-  AUTO_RENEW_CONTRACT,
-  AR_FINALITY,
-} from "./common/constants.ts";
-import { decodeDomain } from "./common/starknetid.ts";
-
-const filter = {
-  header: { weak: true },
+true },
   events: [
     {
       fromAddress: formatFelt(AUTO_RENEW_CONTRACT),
